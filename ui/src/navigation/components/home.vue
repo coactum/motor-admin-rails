@@ -104,9 +104,9 @@
       style="bottom: 0"
     >
       <a
-        :href="isStandalone ? 'https://github.com/motor-admin/motor-admin' : 'https://github.com/motor-admin/motor-admin-rails'"
+        :href="isStandalone ? 'https://coactum.de' : 'https://coactum.de'"
         target="_blank"
-      >Motor Admin v{{ version }}</a>
+      >coactum Admin v{{ version }}</a>
     </div>
   </div>
 </template>

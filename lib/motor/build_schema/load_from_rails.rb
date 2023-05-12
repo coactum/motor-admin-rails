@@ -14,7 +14,7 @@ module Motor
       ACTIVE_STORAGE_SCOPE_PREFIX = 'with_attached_'
 
       DEFAULT_CURRENCY_FORMAT_HASH = {
-        currency: 'USD',
+        currency: 'EUR',
         currency_base: 'units'
       }.freeze
 

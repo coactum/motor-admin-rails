@@ -14,11 +14,11 @@ function formatDate (date, options, displayTime, convertToUtc) {
   if (displayTime) {
     options.hour = 'numeric'
     options.minute = 'numeric'
-    options.hour12 = true
+    options.hour12 = false
   }
 
   if (dateTime.toLocaleString) {
-    return dateTime.toLocaleString('en-US', options)
+    return dateTime.toLocaleString('de-DE', options)
   } else {
     return dateTime.toString()
   }

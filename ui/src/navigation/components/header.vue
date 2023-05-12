@@ -8,24 +8,12 @@
         :style="{ width: '44px', height: '42px' }"
       >
         <div class="d-flex align-items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-bolt"
-            width="26"
-            height="26"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              stroke="none"
-              d="M0 0h26v26H0z"
-              fill="none"
-            />
-            <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+          <svg width="26" height="26" viewBox="0 0 945 945" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+              <g transform="matrix(5.44948,0,0,5.44948,824.307,327.544)">
+                  <g id="Ebene-1" serif:id="Ebene 1">
+                      <path d="M0,52.827C-0.059,58.6 -4.221,65.643 -9.249,68.478L-38.233,84.822C-43.261,87.657 -51.442,87.574 -56.412,84.638L-85.06,67.708C-90.03,64.771 -94.049,57.645 -93.991,51.872L-93.654,18.599C-93.596,12.827 -89.434,5.784 -84.405,2.948L-55.419,-13.399C-50.391,-16.235 -42.21,-16.152 -37.241,-13.215L-8.592,3.714C-3.623,6.651 0.396,13.777 0.337,19.55L0,52.827ZM-1.387,-26.418L-48.691,-54.372C-56.897,-59.221 -70.405,-59.358 -78.708,-54.676L-126.569,-27.686C-134.872,-23.004 -141.744,-11.374 -141.84,-1.842L-142.396,53.098C-142.493,62.629 -135.857,74.395 -127.651,79.245L-80.346,107.199C-72.14,112.049 -58.632,112.185 -50.33,107.503L-2.469,80.514C5.834,75.831 12.707,64.201 12.803,54.67L13.359,-0.271C13.455,-9.802 6.82,-21.569 -1.387,-26.418" style="fill:white;fill-rule:nonzero;"/>
+                  </g>
+              </g>
           </svg>
         </div>
       </VButton>
