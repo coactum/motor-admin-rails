@@ -74,7 +74,7 @@ module Motor
           associations: fetch_associations(model),
           icon: Motor::FindIcon.call(model_name),
           scopes: fetch_scopes(model),
-          actions: BuildSchema::Defaults.actions,
+          actions: (model_name == 'User') ? BuildSchema::Defaults.actions + BuildSchema::Defaults.user_actions : BuildSchema::Defaults.actions,
           tabs: BuildSchema::Defaults.tabs,
           searchable_columns: FindSearchableColumns.call(model),
           custom_sql: nil,

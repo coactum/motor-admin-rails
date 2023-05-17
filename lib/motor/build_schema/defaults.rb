@@ -17,6 +17,14 @@ module Motor
             visible: true
           },
           {
+            name: 'upload',
+            display_name: I18n.t('motor.upload'),
+            action_type: BuildSchema::DEFAULT_TYPE,
+            preferences: {},
+            apply_on: 'collection',
+            visible: true
+          },
+          {
             name: 'edit',
             display_name: I18n.t('motor.edit'),
             action_type: BuildSchema::DEFAULT_TYPE,
@@ -27,6 +35,35 @@ module Motor
           {
             name: 'remove',
             display_name: I18n.t('motor.remove'),
+            action_type: BuildSchema::DEFAULT_TYPE,
+            preferences: {},
+            apply_on: 'member',
+            visible: true
+          }
+        ].freeze
+      end
+
+      def user_actions
+        [
+          {
+            name: 'send_credentials',
+            display_name: I18n.t('motor.send_credentials'),
+            action_type: BuildSchema::DEFAULT_TYPE,
+            preferences: {},
+            apply_on: 'member',
+            visible: true
+          },
+          {
+            name: 'reset_credentials',
+            display_name: I18n.t('motor.reset_credentials'),
+            action_type: BuildSchema::DEFAULT_TYPE,
+            preferences: {},
+            apply_on: 'member',
+            visible: true
+          },
+          {
+            name: 'impersonate',
+            display_name: I18n.t('motor.impersonate'),
             action_type: BuildSchema::DEFAULT_TYPE,
             preferences: {},
             apply_on: 'member',

@@ -1,5 +1,8 @@
 de:
   motor:
+    send_credentials: Zugangsdaten mailen
+    reset_credentials: Zgangsdaten zurücksetzen
+    impersonate: Supervision
     action_has_been_applied: Action has been applied!
     action_has_failed_with_code: Action failed with code
     action_type: Action type

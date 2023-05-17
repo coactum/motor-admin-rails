@@ -1,5 +1,13 @@
 <template>
   <VButton
+    v-if="uploadAction && !customActions.length"
+    class="mx-1"
+    type="primary"
+    icon="md-cloud-upload"
+    data-role="new"
+    @click="openForm(uploadAction)"
+  />
+  <VButton
     v-if="createAction && !customActions.length"
     type="primary"
     icon="md-add"
@@ -45,6 +53,7 @@ import { modelNameMap } from '../scripts/schema'
 import { buildDefaultValues } from '../scripts/form_utils'
 
 import ResourceForm from './form'
+import ResourceUploadForm from './form_upload'
 import FormHeader from './form_header'
 import CustomFormWrapper from 'custom_forms/components/form_wrapper'
 
@@ -76,6 +85,11 @@ export default {
     createAction () {
       return this.model.actions.find((action) => {
         return action.name === 'create' && action.visible
+      })
+    },
+    uploadAction () {
+      return this.model.actions.find((action) => {
+        return action.name === 'upload' && action.visible
       })
     },
     customActions () {
@@ -133,12 +147,13 @@ export default {
       }
     },
     openForm (action) {
-      const component = action.action_type === 'default' ? ResourceForm : CustomFormWrapper
+      const component = action.action_type === 'default' ? (action.name === 'upload' ? ResourceUploadForm : ResourceForm) : CustomFormWrapper
+
       const props = action.action_type === 'default' ? this.defaultProps : this.customActionProps(action)
 
       this.$Drawer.open(component, props, {
         slots: {
-          header: () => h(FormHeader, { resource: this.resource, resourceName: this.model.name, action: 'create' })
+          header: () => h(FormHeader, { resource: this.resource, resourceName: this.model.name, action: action.name })
         },
         handleClickOutside () {
           if (this.$el.querySelector('form[data-form-edited="true"]')) {
