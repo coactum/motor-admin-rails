@@ -9,6 +9,7 @@
       :collapsible="true"
       :collapsed-width="0"
       :style="{ background: '#fff', maxHeight: 'calc(var(--vh, 100vh) - 60px)' }"
+      :width="240"
     >
       <ResourcesMenu
         :resources="visibleResources"

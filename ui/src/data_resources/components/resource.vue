@@ -7,6 +7,7 @@
       v-if="associations.length && !widthLessThan('sm')"
       class="border-top"
       :style="{ background: '#fff', maxHeight: 'calc(var(--vh, 100vh) - 112px)' }"
+      :width="240"
     >
       <ResourcesMenu
         :resources="associations"

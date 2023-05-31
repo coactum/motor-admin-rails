@@ -89,7 +89,7 @@ export default {
 
 @media screen and (min-width: $breakpoint-sm) {
   .ivu-menu-item-text {
-    width: 164px
+    width: 204px
   }
 }
 </style>
